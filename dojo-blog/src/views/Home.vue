@@ -13,12 +13,18 @@ export default {
    name: "Home",
    setup(){
       const p = ref(null)
+      const name = ref('mario')
+      const age = ref(30)
+
       const handleClick = ()=>{
-         console.log(p)
+         name.value = 'Luigi'
+         age.value = 30
       }
 
       return {
          p,
+         name,
+         age,
          handleClick
       }
    }

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import {ref} from 'vue'
+import {computed, ref} from 'vue'
 
 export default {
    name: "Home",
@@ -15,6 +15,9 @@ export default {
       const p = ref(null)
       const name = ref('mario')
       const age = ref(30)
+      const name2 = computed(()=>{
+         return 'Shaun'
+      })
 
       const handleClick = ()=>{
          name.value = 'Luigi'
